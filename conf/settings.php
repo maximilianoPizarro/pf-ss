@@ -603,9 +603,9 @@ if ($settings['hash_salt']) {
  * and increase the limits of these variables.  For more information, see
  * http://php.net/manual/pcre.configuration.php.
  */
-ini_set('xdebug.max_nesting_level', 300);
-# ini_set('pcre.backtrack_limit', 200000);
-# ini_set('pcre.recursion_limit', 200000);
+#ini_set('xdebug.max_nesting_level', 300);
+ini_set('pcre.backtrack_limit', 200000);
+ini_set('pcre.recursion_limit', 200000);
 
 /**
  * Active configuration settings.
