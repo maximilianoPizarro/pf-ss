@@ -219,15 +219,15 @@
  * @endcode
  */
 
-  $db = parse_url($_ENV["CLEARDB_DATABASE_URL"]);
+  $db = parse_url($_ENV["DATABASE_URL"]);
 
   $databases['default']['default'] = array(
    'database' => trim($db["path"], "/"),
    'username' => $db["user"],
    'password' => $db["pass"],
    'host' => $db["host"],
-   'port' => '3306',
-   'driver' => 'mysql',
+   'port' => '5432',
+   'driver' => 'pgsql',
    'prefix' => '',
    'collation' => 'utf8mb4_general_ci',
   );
